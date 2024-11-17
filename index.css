@@ -1,0 +1,127 @@
+/* styles.css */
+@import url(https://db.onlinewebfonts.com/c/c446362802681bacaacbad0f39bfc1a5?family=SuisseBPIntl-Medium);
+
+/* Reset some default styles */
+body, html {
+  margin: 0;
+
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "SuisseBPIntl-Medium";
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+/* Full-screen home container */
+.home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(Asset/bg5.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: #000; /* Dark background for space theme */
+  color: #fff; /* White text */
+  overflow: hidden;
+  animation: glowEffect 6s infinite alternate;
+}
+
+.home::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  pointer-events: none;
+  animation: twinkleEffect 5s infinite;
+}
+
+@keyframes glowEffect {
+  0% {
+    filter: brightness(0.6); /* Normal brightness */
+  }
+  50% {
+    filter: brightness(1); /* Increase brightness for glow */
+  }
+  100% {
+    filter: brightness(0.6); /* Back to normal */
+  }
+}
+
+@keyframes twinkleEffect {
+  0%, 100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}   
+
+/* Info section styling */
+.info-container {
+  width: 80%;
+  padding: 20px 20px 20px 150px;
+  background-color: rgba(255, 255, 255, 0); /* Transparent background */
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+
+
+h1 {
+  color: #ffffff;
+  font-size: 5vh;
+  text-shadow: 1px 1px rgb(65, 38, 9);
+}
+
+h3 {
+  color: #ffffffe3;
+  text-shadow: 1px 1px rgb(63, 48, 14);
+  font-size: 3vh;
+
+}
+
+
+
+
+.icon-button i {
+  color: #ffffff;
+  border-radius: 2.6rem;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.3rem;
+  height: 2.6rem;
+  line-height: 2.6rem;
+  margin: 0 5px;
+  position: relative;
+  text-align: center; 
+  user-select: none;
+  width: 2.6rem;
+  margin-bottom: 10px;
+  transition: 0.2s ease-in;
+}
+
+.linkedin i {
+  background-color: #333;
+}
+
+.github i {
+  background-color: #333;
+}
+
+
+.twitter i {
+  background-color: #333;
+}
+
+.google i {
+  background-color: #333;
+}
