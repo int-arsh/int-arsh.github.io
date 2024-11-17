@@ -1,13 +1,9 @@
-/* styles.css */
-@import url(https://db.onlinewebfonts.com/c/c446362802681bacaacbad0f39bfc1a5?family=SuisseBPIntl-Medium);
-
-/* Reset some default styles */
 body, html {
   margin: 0;
 
   padding: 0;
   box-sizing: border-box;
-  font-family: "SuisseBPIntl-Medium";
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -66,7 +62,7 @@ body, html {
 /* Info section styling */
 .info-container {
   width: 80%;
-  padding: 20px 20px 20px 150px;
+  padding: 20px 20px 20px 100px;
   background-color: rgba(255, 255, 255, 0); /* Transparent background */
   text-align: center;
   margin-top: 20px;
