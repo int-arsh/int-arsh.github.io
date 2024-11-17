@@ -121,3 +121,12 @@ h3 {
 .google i {
   background-color: #333;
 }
+
+/* Hover Transition */
+.twitter i:hover,   
+.github i:hover,
+.linkedin i:hover,
+.google i:hover {
+  background-color: #000000;
+  
+}
